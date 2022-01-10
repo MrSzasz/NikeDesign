@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+$color1: #282828;
+$color2: #404040;
+$color3: #9F9F9F;
+$color4: #E3E3E3;
+$color5: #FFFFFF;
+$font1: 'Proza Libre', sans-serif;
+/* Css */
+body {
+    background-color: $color1;
+    color: $color5;
+    font-family: $font1;
+}
+.cuerpo {
+    display: flex; 
+}
+
+
+/* Navegador - principio */
+.navegador {
+    width: 5%;
+    height: 100vh;
+    border-left: 1px solid $color5;
+    border-right: 1px solid $color5;
+    box-shadow: 0px 0px 2px 2px $color4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* Navegador - fin */
+.contenido {
+    width: 100%;
+}
+
+/* Header - principio */
+.encabezado {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+/* Header - fin */
+.DivisorDeContenido {
+    display: flex;
+}
+/* ContenidoPrincipal - principio */
+.contenedorPrincipal {
+    width: 70%;
+}
+.contenedorZapatillasPopulares {
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+.zapatillasPopulares {
+    background-color: $color5;
+    color: $color1;
+    padding: 2%;
+    border-radius: 1.7em;
+}
+.primeraZapatilla {
+    width: 50%;
+}
+.segundaZapatilla {
+    width: 20%;
+}
+.terceraZapatillaYCuartaZapatilla {
+    width: 20%;
+}
+.terceraZapatilla, .cuartaZapatilla {
+    width: 100%;
+    padding: 5%;
+    height: 48%;
+    margin-bottom: 4%;
+    border-radius: 1.7em;
+}
+.cuartaZapatilla {
+    margin-bottom: 0;
+}
+/* Shop - principio */
+.contenedorHeaderShop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    h2 {
+        font-size: 1.5em;
+    }
+}
+.zapatillaShop {
+    min-height: 180px;
+    min-width: 180px;
+    border: 1px solid $color2;
+    border-radius: 1.7em;
+    background: linear-gradient(320deg, $color1, $color2);
+}
+.nombreZapatillasShop {
+    margin-top: 5%;
+    font-size: 1em;
+}
+.contenedorPrecioBotonShop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .botonShop {
+        background-color: $color1;
+        border-radius: 0.9em;
+        padding: 0% 5%;
+        color: $color5;
+        border: 1px solid $color5;
+    }
+    p {
+        color: $color3;
+        margin: 0;
+    }
+}
+/* Shop - fin */
+
+/* Shop - principio */
+
+/* Shop - fin */
+
+/* Shop - principio */
+
+/* Shop - fin */
+
+/* ContenidoPrincipal - fin */
+
+/* Aside - principio */
+.costado {
+    width: 25%;
+    margin-right: 2%;
+    border: 2px solid $color5;
+    height: 90vh;
+    border-radius: 1.7em;
+}
+/* Aside - fin */

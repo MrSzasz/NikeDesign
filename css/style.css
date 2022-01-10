@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variables */
+/* Css */
+body {
+  background-color: #282828;
+  color: #FFFFFF;
+  font-family: "Proza Libre", sans-serif;
+}
+
+.cuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Navegador - principio */
+.navegador {
+  width: 5%;
+  height: 100vh;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 0px 2px 2px #E3E3E3;
+          box-shadow: 0px 0px 2px 2px #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+/* Navegador - fin */
+.contenido {
+  width: 100%;
+}
+
+/* Header - principio */
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0px;
+}
+
+/* Header - fin */
+.DivisorDeContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ContenidoPrincipal - principio */
+.contenedorPrincipal {
+  width: 70%;
+}
+
+.contenedorZapatillasPopulares {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+.zapatillasPopulares {
+  background-color: #FFFFFF;
+  color: #282828;
+  padding: 2%;
+  border-radius: 1.7em;
+}
+
+.primeraZapatilla {
+  width: 50%;
+}
+
+.segundaZapatilla {
+  width: 20%;
+}
+
+.terceraZapatillaYCuartaZapatilla {
+  width: 20%;
+}
+
+.terceraZapatilla, .cuartaZapatilla {
+  width: 100%;
+  padding: 5%;
+  height: 48%;
+  margin-bottom: 4%;
+  border-radius: 1.7em;
+}
+
+.cuartaZapatilla {
+  margin-bottom: 0;
+}
+
+/* Shop - principio */
+.contenedorHeaderShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenedorHeaderShop h2 {
+  font-size: 1.5em;
+}
+
+.zapatillaShop {
+  min-height: 180px;
+  min-width: 180px;
+  border: 1px solid #404040;
+  border-radius: 1.7em;
+  background: linear-gradient(320deg, #282828, #404040);
+}
+
+.nombreZapatillasShop {
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+.contenedorPrecioBotonShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorPrecioBotonShop .botonShop {
+  background-color: #282828;
+  border-radius: 0.9em;
+  padding: 0% 5%;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.contenedorPrecioBotonShop p {
+  color: #9F9F9F;
+  margin: 0;
+}
+
+/* Shop - fin */
+/* ContenidoPrincipal - fin */
+/* Aside - principio */
+.costado {
+  width: 25%;
+  margin-right: 2%;
+  border: 2px solid #FFFFFF;
+  height: 90vh;
+  border-radius: 1.7em;
+}
+
+/* Aside - fin */
+/*# sourceMappingURL=style.css.map */
