@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
 
+@font-face {
+    font-family: Circular;
+    src: url(../fuentes/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: CircularMedium;
+    src: url(../fuentes/CircularStd-Medium.otf);
+}
+
+@font-face {
+    font-family: CircularBold;
+    src: url(../fuentes/CircularStd-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +27,17 @@ $color2: #404040;
 $color3: #9F9F9F;
 $color4: #E3E3E3;
 $color5: #FFFFFF;
-$font1: 'Proza Libre', sans-serif;
+$font1: Circular;
+
 /* Css */
 body {
     background-color: $color1;
     color: $color5;
     font-family: $font1;
 }
+
 .cuerpo {
-    display: flex; 
+    display: flex;
 }
 
 
@@ -35,6 +52,7 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
 /* Navegador - fin */
 .contenido {
     width: 100%;
@@ -47,80 +65,219 @@ body {
     justify-content: space-around;
     margin: 20px 0px;
 }
+
 /* Header - fin */
 .DivisorDeContenido {
     display: flex;
 }
+
 /* ContenidoPrincipal - principio */
 .contenedorPrincipal {
-    width: 70%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shop {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .contenedorPicker {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap: 30px;
+        justify-content: center;
+
+        .contenedorZapatillaShop {
+            width: 45%;
+
+            .contenedorCompraShop {
+                display: flex;
+                margin-top: 15px;
+
+                .textoCarta {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .nombreZapatillasShop {
+                    line-height: 6px;
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}
+
+
+
 .contenedorZapatillasPopulares {
     justify-content: space-around;
     margin-bottom: 3%;
 }
+
 .zapatillasPopulares {
     background-color: $color5;
     color: $color1;
     padding: 2%;
-    border-radius: 1.7em;
+    border-radius: 1px;
 }
+
 .primeraZapatilla {
     width: 50%;
 }
+
 .segundaZapatilla {
     width: 20%;
 }
+
 .terceraZapatillaYCuartaZapatilla {
     width: 20%;
 }
-.terceraZapatilla, .cuartaZapatilla {
+
+.terceraZapatilla,
+.cuartaZapatilla {
     width: 100%;
     padding: 5%;
     height: 48%;
     margin-bottom: 4%;
-    border-radius: 1.7em;
+    border-radius: 1px;
 }
+
 .cuartaZapatilla {
     margin-bottom: 0;
 }
+
 /* Shop - principio */
 .contenedorHeaderShop {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-left: 11px;
+
     h2 {
-        font-size: 1.5em;
+        font-size: 20px;
     }
 }
+
 .zapatillaShop {
-    min-height: 180px;
-    min-width: 180px;
+    height: 135px;
+    width: 100%;
     border: 1px solid $color2;
-    border-radius: 1.7em;
+    border-radius: 15px;
     background: linear-gradient(320deg, $color1, $color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all .25s;
+
+    &:hover {
+        border: 3px solid $color3;
+    }
+
+    img {
+        height: 120px;
+        width: auto;
+    }
 }
+
 .nombreZapatillasShop {
     margin-top: 5%;
     font-size: 1em;
 }
+
 .contenedorPrecioBotonShop {
     display: flex;
-    width: 100%;
+    width: min-content;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
     .botonShop {
         background-color: $color1;
-        border-radius: 0.9em;
-        padding: 0% 5%;
+        border-radius: 20px;
+        padding: 4px 15px 4px 15px;
         color: $color5;
         border: 1px solid $color5;
+        font-size: 12px;
+        transition: ease all .25s;
+
+        &:hover {
+            background-color: $color2;
+        }
+
+        &:active {
+            background-color: $color3;
+        }
     }
-    p {
+
+    .precioShop {
         color: $color3;
         margin: 0;
+        font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Shop - fin */
 
 /* Shop - principio */
@@ -141,4 +298,5 @@ body {
     height: 90vh;
     border-radius: 1.7em;
 }
+
 /* Aside - fin */
