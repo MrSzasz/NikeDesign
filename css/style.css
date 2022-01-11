@@ -158,6 +158,10 @@ body {
 }
 
 /* Shop - fin */
+/* Shop - principio */
+/* Shop - fin */
+/* Shop - principio */
+/* Shop - fin */
 /* ContenidoPrincipal - fin */
 /* Aside - principio */
 .costado {
@@ -166,6 +170,145 @@ body {
   border: 2px solid #FFFFFF;
   height: 90vh;
   border-radius: 1.7em;
+}
+
+.socialComponent {
+  width: 87vw;
+  border: 2px solid #FFFFFF;
+  border-radius: 1.7em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+  background: linear-gradient(to top, #282828, #404040);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.socialComponent .social {
+  width: 43.5vw;
+}
+
+.socialComponent .social .social--tittle {
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+}
+
+.socialComponent .social .social--costumer {
+  color: white;
+  font-size: medium;
+  padding-left: 5px;
+}
+
+.socialComponent .social .socialCostumersList {
+  padding-left: 5px;
+}
+
+.socialComponent .social .socialCostumersList .costumer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.socialComponent .social .socialCostumersList .costumer .costumerPhoto {
+  background-image: url(../img/costumer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.socialComponent .social .socialCostumersList .costumer .costumerDescription {
+  width: 70px;
+  padding-left: 5px;
+  font-size: x-small;
+  color: white;
+}
+
+.socialComponent .line {
+  background-color: #9F9F9F;
+  width: 2px;
+  height: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.socialComponent .events {
+  width: 43.5vw;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.socialComponent .events .eventList {
+  padding: 5px;
+}
+
+.socialComponent .events .eventList .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.socialComponent .events .eventList .event .eventDate {
+  background-image: url(../img/date.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.socialComponent .events .eventList .event .eventDescription {
+  color: white;
+  padding-left: 5px;
+  font-size: x-small;
+}
+
+.socialComponent .events .eventList .event1 {
+  padding-top: 20px;
+}
+
+@media (min-width: 558px) {
+  .socialComponent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .socialComponent .social .socialCostumersList .costumerPhoto {
+    width: 50px;
+    height: 50px;
+  }
+  .socialComponent .social .socialCostumersList .costumerDescription {
+    font-size: small;
+  }
+  .socialComponent .line {
+    height: 2px;
+    width: 69.6vw;
+  }
+  .socialComponent .events .eventList .event .eventDate {
+    width: 50px;
+    height: 50px;
+  }
+  .socialComponent .events .eventList .event .eventDescription {
+    font-size: small;
+  }
 }
 
 /* Aside - fin */

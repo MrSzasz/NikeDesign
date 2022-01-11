@@ -134,11 +134,128 @@ body {
 /* ContenidoPrincipal - fin */
 
 /* Aside - principio */
+$social__witdh: 87vw;
 .costado {
     width: 25%;
     margin-right: 2%;
     border: 2px solid $color5;
     height: 90vh;
     border-radius: 1.7em;
+}
+.socialComponent {
+    width: $social__witdh;
+    border: 2px solid $color5;
+    border-radius: 1.7em;
+    background: linear-gradient(to top, #282828, #404040);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .social{
+        width: ($social__witdh / 2);
+        .social--tittle{
+            color: white;
+            font-size: larger;
+            padding-left: 5px;
+        }
+        .social--costumer{
+            color: white;
+            font-size: medium;
+            padding-left: 5px;
+        }
+        .socialCostumersList{
+            padding-left: 5px;
+            .costumer{
+                display: flex;
+                align-items: flex-start;
+                column-gap: 10px;
+                .costumerPhoto{
+                    background-image: url(../img/costumer.jpg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 30px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .costumerDescription{
+                    width: 70px;
+                    padding-left: 5px;
+                    font-size: x-small;
+                    color: white;
+                }
+            }
+        }
+    }
+    .line{
+        background-color: $color3;
+        width: 2px;
+        height: 500px;
+        align-self: center;
+    }
+    .events{
+        width: ($social__witdh / 2);
+        margin-top: 5px;
+        padding-left: 10px;
+        .eventList{
+            padding: 5px;
+            .event{
+                display: flex;
+                gap: 10px;
+                .eventDate{
+                    background-image: url(../img/date.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .eventDescription{
+                    color: white;
+                    padding-left: 5px;
+                    font-size: x-small;
+                }
+            }
+            .event1{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 558px) {
+    .socialComponent{
+        flex-direction: column;
+        align-items: center;
+        .social{
+            .socialCostumersList{
+                .costumerPhoto{
+                    width: 50px;
+                    height: 50px;
+                }
+                .costumerDescription{
+                    font-size: small;
+                }
+            }
+        }
+        .line{
+            height: 2px;
+            width: ($social__witdh * 0.8);
+        }
+        .events{
+            .eventList{
+                .event{
+                    .eventDate{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .eventDescription{
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+
 }
 /* Aside - fin */
