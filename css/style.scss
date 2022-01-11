@@ -79,32 +79,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ================ GALERIA ZAPATILLAS == INICIO ============== 
 
 .shop {
     margin: 30px 0 30px 0;
@@ -112,16 +87,53 @@ body {
     display: flex;
     flex-direction: column;
 
+    .contenedorHeaderShop {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 11px;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
     .contenedorPicker {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+
+        flex: {
+            direction: row;
+            wrap: wrap;
+        }
+
+        ;
         gap: 10px;
         row-gap: 30px;
         justify-content: center;
 
         .contenedorZapatillaShop {
             width: 45%;
+
+            .zapatillaShop {
+                height: 135px;
+                width: 100%;
+                border: 1px solid $color2;
+                border-radius: 15px;
+                background: linear-gradient(320deg, $color1, $color2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: ease all .25s;
+
+                &:hover {
+                    border: 3px solid $color3;
+                }
+
+                img {
+                    height: 120px;
+                    width: auto;
+                }
+            }
 
             .contenedorCompraShop {
                 display: flex;
@@ -131,19 +143,52 @@ body {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
+
+                    .nombreZapatillasShop {
+                        line-height: 6px;
+                        font-size: 14px;
+                    }
+
+                    .precioShop {
+                        color: $color3;
+                        margin: 0;
+                        font-size: 14px;
+                    }
                 }
 
-                .nombreZapatillasShop {
-                    line-height: 6px;
-                    font-size: 14px;
-                }
+                .contenedorPrecioBotonShop {
+                    display: flex;
+                    width: min-content;
+                    justify-content: space-between;
+                    align-items: flex-start;
 
+                    .botonShop {
+                        background-color: $color1;
+                        border-radius: 20px;
+                        padding: 4px 15px 4px 15px;
+                        color: $color5;
+                        border: 1px solid $color5;
+                        font-size: 12px;
+                        transition: ease all .25s;
+
+                        &:hover {
+                            background-color: $color2;
+                        }
+
+                        &:active {
+                            background-color: $color3;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+// ================ GALERIA ZAPATILLAS == FIN ============== 
 
+
+/* Shop - principio */
 
 .contenedorZapatillasPopulares {
     justify-content: space-around;
@@ -181,102 +226,6 @@ body {
 .cuartaZapatilla {
     margin-bottom: 0;
 }
-
-/* Shop - principio */
-.contenedorHeaderShop {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 11px;
-
-    h2 {
-        font-size: 20px;
-    }
-}
-
-.zapatillaShop {
-    height: 135px;
-    width: 100%;
-    border: 1px solid $color2;
-    border-radius: 15px;
-    background: linear-gradient(320deg, $color1, $color2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease all .25s;
-
-    &:hover {
-        border: 3px solid $color3;
-    }
-
-    img {
-        height: 120px;
-        width: auto;
-    }
-}
-
-.nombreZapatillasShop {
-    margin-top: 5%;
-    font-size: 1em;
-}
-
-.contenedorPrecioBotonShop {
-    display: flex;
-    width: min-content;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    .botonShop {
-        background-color: $color1;
-        border-radius: 20px;
-        padding: 4px 15px 4px 15px;
-        color: $color5;
-        border: 1px solid $color5;
-        font-size: 12px;
-        transition: ease all .25s;
-
-        &:hover {
-            background-color: $color2;
-        }
-
-        &:active {
-            background-color: $color3;
-        }
-    }
-
-    .precioShop {
-        color: $color3;
-        margin: 0;
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Shop - fin */
 
