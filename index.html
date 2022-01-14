@@ -12,160 +12,306 @@
 </head>
 
 <body>
+    <!-- ================ ENCABEZADO == INICIO ============== -->
+    <header class="encabezado row">
 
-    <div class="cuerpo">
-        <!-- <nav class="navegador">
+        <div class="contenedorLogo col-2 col-lg-1">
+            <img class="logo" src="./img/logo.jpg" alt="logo-nike">
+        </div>
 
-            <div class="contenedorLogo">
-                <img class="img-fluid logo" src="./img/logo.jpg" alt="logo-nike">
-            </div>
+        <form class="buscador col-6 col-lg-8">
+            <label for=""></label>
+            <input type="search" placeholder="Search">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
 
-            <ul>
-                <li class="nav-item"><a href="#">casa</a></li>
-                <li class="nav-item"><a href="#">fotos</a></li>
-                <li class="nav-item"><a href="#">mensajes</a></li>
-                <li class="nav-item"><a href="#">gustos</a></li>
+        <div class="contenedorFotoPerfil col-4 col-lg-3">
+            <button class="contenedorCompras">Comp</button>
+            <img src="FotoPerfil" alt="foto de perfil de tu sesion">
+        </div>
+
+    </header>
+    <!-- ================ ENCABEZADO == FIN ============== -->
+    <div class="row">
+        <!-- ================ NAVEGADOR == INICIO ============== -->
+        <nav class="navegador col-12 col-lg-1">
+
+            <ul class="row">
+                <li class="nav-item col-lg-12 col-3"><a href="#">casa</a></li>
+                <li class="nav-item col-lg-12 col-3"><a href="#">fotos</a></li>
+                <li class="nav-item col-lg-12 col-3"><a href="#">mensajes</a></li>
+                <li class="nav-item col-lg-12 col-3"><a href="#">gustos</a></li>
             </ul>
 
-        </nav> -->
+        </nav>
+        <!-- ================ NAVEGADOR == FIN ============== -->
 
-        <div class="contenido">
-            <header class="encabezado">
+        <main class="container contenedorPrincipal col-12 col-lg-7">
+            <!-- ================ ZAPATILLAS POPULARES == INICIO ============== -->
+            <div class="contenedorZapatillasPopulares row">
 
-                <form class="buscador">
-                    <label for=""></label>
-                    <input type="search" placeholder="Search">
-                    <button type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-
-                <div class="contenedorFotoPerfil">
-                    <button class="contenedorCompras">Comp</button>
-                    <img src="FotoPerfil" alt="foto de perfil de tu sesion">
+                <div class="zapatillasPopulares primeraZapatilla col-12 col-lg-6">
+                    <h2 class="titulo">Nike Zoomer</h2>
+                    <p class="subtitulo">Con bluetooh</p>
+                    <p class="precio">$59,69</p>
+                    <p class="descuento">40% off</p>
                 </div>
 
-            </header>
+                <div class="zapatillasPopulares segundaZapatilla col-4 col-lg-3">2</div>
 
-            <div class="DivisorDeContenido">
-                <main class="container contenedorPrincipal">
+                <div class="terceraZapatillaYCuartaZapatilla col-8 col-lg-2 row">
+                    <div class="zapatillasPopulares terceraZapatilla col-6 col-lg-12">3</div>
+                    <div class="zapatillasPopulares cuartaZapatilla col-6 col-lg-12">4</div>
+                </div>
 
-                    <div class="contenedorZapatillasPopulares row">
+            </div>
+            <!-- ================ ZAPATILLAS POPULARES == FIN ============== -->
 
-                        <div class="zapatillasPopulares primeraZapatilla">
-                            <h2 class="titulo">Nike Zoomer</h2>
-                            <p class="subtitulo">Con bluetooh</p>
-                            <p class="precio">$59,69</p>
-                            <p class="descuento">40% off</p>
+            <!-- ================ GALERIA ZAPATILLAS == INICIO ============== -->
+            <div class="shop container">
+
+                <div class="contenedorHeaderShop">
+                    <h2 class="shopTitulo">Shop</h2>
+                    <button class="flechaDerecha">></button>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-3 contenedorZapatillaShop contenedorZapatillaShop1">
+
+                        <div class="zapatillaShop zapatillaShop1">
+                            <img src="./img/nikeShoe.png" alt="zapatos-nike">
                         </div>
 
-                        <div class="zapatillasPopulares segundaZapatilla">2</div>
+                        <div class="contenedorCompraShop">
 
-                        <div class="terceraZapatillaYCuartaZapatilla">
-                            <div class="zapatillasPopulares terceraZapatilla">3</div>
-                            <div class="zapatillasPopulares cuartaZapatilla">4</div>
-                        </div>
-
-                    </div>
-
-                    <!-- ================ GALERIA ZAPATILLAS == INICIO ============== -->
-                    
-                    <div class="shop">
-                        
-                        <div class="contenedorHeaderShop">
-                            <h2 class="shopTitulo">Shop</h2>
-                            <!-- <button class="flechaDerecha">></button> -->
-                        </div>
-                        <div class="contenedorPicker">
-                            <div class="contenedorZapatillaShop">
-                                <div class="zapatillaShop">
-                                    <img src="./img/nikeShoe.png" alt="">
-                                </div>
-                                <div class="contenedorCompraShop">
-                                    <div class="textoCarta">
-                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
-                                        <p class="precioShop">£64.99</p>
-                                    </div>
-                                    <div class="contenedorPrecioBotonShop">
-                                        <button class="botonShop">Add</button>
-                                    </div>
-                                    
-                                </div>
-                                
+                            <div class="textoCarta">
+                                <h3 class="nombreZapatillasShop">Pegasus 38</h3>
+                                <p class="precioShop">£64.99</p>
                             </div>
-                            <div class="contenedorZapatillaShop">
-                                
-                                <div class="zapatillaShop">
-                                    <img src="./img/nikeShoe.png" alt="">
-                                </div>
-                                
-                                <div class="contenedorCompraShop">
-                                    <div class="textoCarta">
-                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
-                                        <p class="precioShop">£64.99</p>
-                                    </div>
-                                    <div class="contenedorPrecioBotonShop">
-                                        <button class="botonShop">Add</button>
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-                            <div class="contenedorZapatillaShop">
-                                
-                                <div class="zapatillaShop">
-                                    <img src="./img/nikeShoe.png" alt="">
-                                </div>
-                                
-                                <div class="contenedorCompraShop">
-                                    <div class="textoCarta">
-                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
-                                        <p class="precioShop">£64.99</p>
-                                    </div>
-                                    <div class="contenedorPrecioBotonShop">
-                                        <button class="botonShop">Add</button>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="contenedorZapatillaShop">
-                                
-                                <div class="zapatillaShop">
-                                    <img src="./img/nikeShoe.png" alt="">
-                                </div>
-                                
-                                <div class="contenedorCompraShop">
-                                    <div class="textoCarta">
-                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
-                                        <p class="precioShop">£64.99</p>
-                                    </div>
-                                    <div class="contenedorPrecioBotonShop">
-                                        <button class="botonShop">Add</button>
-                                    </div>
-                                    
-                                </div>
-                                
+                            <div class="contenedorPrecioBotonShop">
+                                <button class="botonShop">Add</button>
                             </div>
                             
                         </div>
+
                     </div>
-                    
+
+                    <div class="col-6 col-lg-3 contenedorZapatillaShop contenedorZapatillaShop2">
+
+                        <div class="zapatillaShop zapatillaShop2">
+                            <img src="./img/nikeShoe.png" alt="zapatos-nike">
+                        </div>
+
+                                <div class="contenedorCompraShop">
+                                    <div class="textoCarta">
+                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
+                                        <p class="precioShop">£64.99</p>
+                                    </div>
+                                    <div class="contenedorPrecioBotonShop">
+                                        <button class="botonShop">Add</button>
+                                    </div>
+                                    
+                                </div>
+
+                    </div>
+
+                    <div class="col-6 col-lg-3 contenedorZapatillaShop contenedorZapatillaShop3">
+
+                        <div class="zapatillaShop zapatillaShop3">
+                            <img src="./img/nikeShoe.png" alt="zapatos-nike">
+                        </div>
+
+                                <div class="contenedorCompraShop">
+                                    <div class="textoCarta">
+                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
+                                        <p class="precioShop">£64.99</p>
+                                    </div>
+                                    <div class="contenedorPrecioBotonShop">
+                                        <button class="botonShop">Add</button>
+                                    </div>
+                                    
+                                </div>
+
+                    </div>
+
+                    <div class="col-6 col-lg-3 contenedorZapatillaShop contenedorZapatillaShop4">
+
+                        <div class="zapatillaShop zapatillaShop4">
+                            <img src="./img/nikeShoe.png" alt="zapatos-nike">
+                        </div>
+
+                                <div class="contenedorCompraShop">
+                                    <div class="textoCarta">
+                                        <h3 class="nombreZapatillasShop">Pegasus 38</h3>
+                                        <p class="precioShop">£64.99</p>
+                                    </div>
+                                    <div class="contenedorPrecioBotonShop">
+                                        <button class="botonShop">Add</button>
+                                    </div>
+                                    
+                                </div>
+
+                    </div>
                 </div>
-                
-                <!-- ================ GALERIA ZAPATILLAS == FIN ============== -->
-                
+            </div>
+            <!-- ================ GALERIA ZAPATILLAS == FIN ============== -->
             <div>
                 <div class="contenedorEstadisticas"></div>
                 <div class="contenedorPuntajes"></div>
             </div>
-            </main>
-            <!-- <aside class="container costado">
-                    <div class="sociales"></div>
-                    <div class="eventos"></div>
-                </aside> -->
+        </main>
+        <!-- ================ Social == INICIO ============== -->
+        <div class="socialComponent col-12 col-lg-4">
+            <div class="social">
+                <p class="socialTittle">social</p>
+                <p class="socialCostumer">5 costumers online</p>
+                <div class="socialCostumersList">
+                    <div class="costumer costumer1">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Ana Asturias</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer2">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Bella Barrios</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer3">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Camila Castro</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer4">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Doris Duarte</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer5">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Esther Escohotado</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer6">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Fania Fuentes</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>offline</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer7">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Gabriela Gutierrez</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>offline</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer costumer8">
+                        <div class="costumerPhoto"></div>
+                        <div class="costumerDescription">
+                            <div class="costumerName">
+                                <p>Hortencia hidalgo</p>
+                            </div>
+                            <div class="costumerStatus">
+                                <p>offline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="events">
+                <p>events</p>
+                <div class="eventList">
+                    <div class="event event1">
+                        <div class="eventDate"></div>
+                        <div class="eventDescription">
+                            <div class="eventName">
+                                <p>promo 2022</p>
+                            </div>
+                            <div class="eventLocation">
+                                <p>Bogotá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event2">
+                        <div class="eventDate"></div>
+                        <div class="eventDescription">
+                            <div class="eventName">
+                                <p>promo 2022</p>
+                            </div>
+                            <div class="eventLocation">
+                                <p>Lima</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event3">
+                        <div class="eventDate"></div>
+                        <div class="eventDescription">
+                            <div class="eventName">
+                                <p>promo 2022</p>
+                            </div>
+                            <div class="eventLocation">
+                                <p>Mexico DF</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event4">
+                        <div class="eventDate"></div>
+                        <div class="eventDescription">
+                            <div class="eventName">
+                                <p>promo 2022</p>
+                            </div>
+                            <div class="eventLocation">
+                                <p>CD Panamá</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- ================ Social == FIN ============== -->
+
     </div>
     <!-- Scripts abre-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

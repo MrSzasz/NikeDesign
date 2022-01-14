@@ -36,20 +36,25 @@ body {
     font-family: $font1;
 }
 
-.cuerpo {
+/* Header - principio */
+.encabezado {
+    width: 100%;
+    margin: 20px 0px;
     display: flex;
+    align-items: center;
 }
 
+.logo {
+    max-height: 60px;
+}
+
+/* Header - fin */
 
 /* Navegador - principio */
 .navegador {
-    width: 5%;
-    height: 100vh;
     border-left: 1px solid $color5;
     border-right: 1px solid $color5;
     box-shadow: 0px 0px 2px 2px $color4;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -58,194 +63,257 @@ body {
     width: 100%;
 }
 
-/* Header - principio */
-.encabezado {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin: 20px 0px;
-}
-
-/* Header - fin */
-.DivisorDeContenido {
-    display: flex;
-}
-
 /* ContenidoPrincipal - principio */
-.contenedorPrincipal {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
 
-
-// ================ GALERIA ZAPATILLAS == INICIO ============== 
-
-.shop {
-    margin: 30px 0 30px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .contenedorHeaderShop {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        padding-left: 11px;
-
-        h2 {
-            font-size: 20px;
-        }
-    }
-
-    .contenedorPicker {
-        display: flex;
-
-        flex: {
-            direction: row;
-            wrap: wrap;
-        }
-
-        ;
-        gap: 10px;
-        row-gap: 30px;
-        justify-content: center;
-
-        .contenedorZapatillaShop {
-            width: 45%;
-
-            .zapatillaShop {
-                height: 135px;
-                width: 100%;
-                border: 1px solid $color2;
-                border-radius: 15px;
-                background: linear-gradient(320deg, $color1, $color2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: ease all .25s;
-
-                &:hover {
-                    border: 3px solid $color3;
-                }
-
-                img {
-                    height: 120px;
-                    width: auto;
-                }
-            }
-
-            .contenedorCompraShop {
-                display: flex;
-                margin-top: 15px;
-
-                .textoCarta {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-
-                    .nombreZapatillasShop {
-                        line-height: 6px;
-                        font-size: 14px;
-                    }
-
-                    .precioShop {
-                        color: $color3;
-                        margin: 0;
-                        font-size: 14px;
-                    }
-                }
-
-                .contenedorPrecioBotonShop {
-                    display: flex;
-                    width: min-content;
-                    justify-content: space-between;
-                    align-items: flex-start;
-
-                    .botonShop {
-                        background-color: $color1;
-                        border-radius: 20px;
-                        padding: 4px 15px 4px 15px;
-                        color: $color5;
-                        border: 1px solid $color5;
-                        font-size: 12px;
-                        transition: ease all .25s;
-
-                        &:hover {
-                            background-color: $color2;
-                        }
-
-                        &:active {
-                            background-color: $color3;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-// ================ GALERIA ZAPATILLAS == FIN ============== 
-
-
-/* Shop - principio */
-
+/* ZapatillasPopulares - principio */
 .contenedorZapatillasPopulares {
     justify-content: space-around;
-    margin-bottom: 3%;
+    margin: 3% 0%;
+
 }
 
 .zapatillasPopulares {
     background-color: $color5;
     color: $color1;
     padding: 2%;
-    border-radius: 1px;
-}
-
-.primeraZapatilla {
-    width: 50%;
-}
-
-.segundaZapatilla {
-    width: 20%;
+    border-radius: 1.7em;
+    margin-bottom: 2%;
 }
 
 .terceraZapatillaYCuartaZapatilla {
-    width: 20%;
+    padding: 0;
 }
 
 .terceraZapatilla,
 .cuartaZapatilla {
-    width: 100%;
     padding: 5%;
     height: 48%;
     margin-bottom: 4%;
-    border-radius: 1px;
+    border-radius: 1.7em;
 }
 
 .cuartaZapatilla {
     margin-bottom: 0;
 }
-
-/* Shop - fin */
+@media screen and (max-width: 988px){
+    .zapatillasPopulares {
+        min-height: 140px;
+    }
+}
+/* ZapatillasPopulares - fin */
 
 /* Shop - principio */
+.contenedorHeaderShop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 
-/* Shop - fin */
+    h2 {
+        font-size: 1.5em;
+    }
+}
 
-/* Shop - principio */
+.zapatillaShop {
+    min-height: 135px;
+    min-width: 120px;
+    border: 1px solid $color2;
+    border-radius: 1.7em;
+    background: linear-gradient(320deg, $color1, $color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all .25s;
 
+    &:hover {
+        border: 3px solid $color3;
+    }
+
+    img {
+        height: 120px;
+        width: auto;
+    }
+}
+
+.nombreZapatillasShop {
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+.contenedorCompraShop {
+    display: flex;
+    margin-top: 15px;
+
+    .textoCarta {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .nombreZapatillasShop {
+            line-height: 6px;
+            font-size: 14px;
+        }
+
+        .precioShop {
+            color: $color3;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+
+    .contenedorPrecioBotonShop {
+        display: flex;
+        width: min-content;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .botonShop {
+            background-color: $color1;
+            border-radius: 20px;
+            padding: 4px 15px 4px 15px;
+            color: $color5;
+            border: 1px solid $color5;
+            font-size: 12px;
+            transition: ease all .25s;
+
+            &:hover {
+                background-color: $color2;
+            }
+
+            &:active {
+                background-color: $color3;
+            }
+        }
+    }
+}
 /* Shop - fin */
 
 /* ContenidoPrincipal - fin */
 
 /* Aside - principio */
-.costado {
-    width: 25%;
-    margin-right: 2%;
+.socialComponent {
+    margin: auto;
+    margin-top: 2%;
+    max-width: 424px;
     border: 2px solid $color5;
-    height: 90vh;
     border-radius: 1.7em;
+    background: linear-gradient(to top, #282828, #404040);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .social {
+        .socialTittle {
+            color: white;
+            font-size: larger;
+            padding-left: 5px;
+        }
+
+        .socialCostumer {
+            color: white;
+            font-size: medium;
+            padding-left: 5px;
+        }
+
+        .socialCostumersList {
+            padding-left: 5px;
+
+            .costumer {
+                display: flex;
+                align-items: flex-start;
+                column-gap: 10px;
+
+                .costumerPhoto {
+                    background-image: url(../img/costumer.jpg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 30px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .costumerDescription {
+                    width: 70px;
+                    padding-left: 5px;
+                    font-size: x-small;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .line {
+        background-color: $color3;
+        width: 2px;
+        height: 500px;
+        align-self: center;
+    }
+
+    .events {
+        margin-top: 5px;
+        padding-left: 10px;
+
+        .eventList {
+            padding: 5px;
+
+            .event {
+                display: flex;
+                gap: 10px;
+
+                .eventDate {
+                    background-image: url(../img/date.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .eventDescription {
+                    color: white;
+                    padding-left: 5px;
+                    font-size: x-small;
+                }
+            }
+
+            .event1 {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 558px) {
+    .socialComponent {
+        .social {
+            .socialCostumersList {
+                .costumerPhoto {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .costumerDescription {
+                    font-size: small;
+                }
+            }
+        }
+
+        .events {
+            .eventList {
+                .event {
+                    .eventDate {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .eventDescription {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Aside - fin */
