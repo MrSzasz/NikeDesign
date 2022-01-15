@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
-@font-face {
-  font-family: Circular;
-  src: url(../fuentes/CircularStd-Book.otf);
-}
-
-@font-face {
-  font-family: CircularMedium;
-  src: url(../fuentes/CircularStd-Medium.otf);
-}
-
-@font-face {
-  font-family: CircularBold;
-  src: url(../fuentes/CircularStd-Bold.otf);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -22,139 +7,16 @@
 }
 
 /* Variables */
-/* Css */
+/* -----   CONTAINER SIZE ----- */
 body {
   background-color: #282828;
-  color: #FFFFFF;
-  font-family: Circular;
+  font-family: "Proza Libre", sans-serif;
 }
 
-/* Header - principio */
-.encabezado {
-  width: 100%;
-  margin: 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo {
-  max-height: 60px;
-}
-
-/* Header - fin */
-/* Navegador - principio */
-.navegador {
-  border-left: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0px 0px 2px 2px #E3E3E3;
-          box-shadow: 0px 0px 2px 2px #E3E3E3;
-  text-align: center;
-}
-
-/* Navegador - fin */
-.contenido {
-  width: 100%;
-}
-
-/* ContenidoPrincipal - principio */
-/* ZapatillasPopulares - principio */
-.contenedorZapatillasPopulares {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 3% 0%;
-}
-
-.zapatillasPopulares {
-  background-color: #FFFFFF;
-  color: #282828;
-  padding: 2%;
-  border-radius: 1.7em;
-  margin-bottom: 2%;
-}
-
-.terceraZapatillaYCuartaZapatilla {
-  padding: 0;
-}
-
-.terceraZapatilla,
-.cuartaZapatilla {
-  padding: 5%;
-  height: 48%;
-  margin-bottom: 4%;
-  border-radius: 1.7em;
-}
-
-.cuartaZapatilla {
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 988px) {
-  .zapatillasPopulares {
-    min-height: 140px;
-  }
-}
-
-/* ZapatillasPopulares - fin */
-/* Shop - principio */
-.contenedorHeaderShop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contenedorHeaderShop h2 {
-  font-size: 1.5em;
-}
-
-.zapatillaShop {
-  min-height: 135px;
-  min-width: 120px;
-  border: 1px solid #404040;
-  border-radius: 1.7em;
-  background: linear-gradient(320deg, #282828, #404040);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: ease all .25s;
-  transition: ease all .25s;
-}
-
-.zapatillaShop:hover {
-  border: 3px solid #9F9F9F;
-}
-
-.zapatillaShop img {
-  height: 120px;
-  width: auto;
-}
-
-.nombreZapatillasShop {
-  margin-top: 5%;
-  font-size: 1em;
-}
-
-.contenedorCompraShop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 15px;
-}
-
-.contenedorCompraShop .textoCarta {
+body .baseLayout {
+  background-color: #282828;
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,61 +24,155 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
-.contenedorCompraShop .textoCarta .nombreZapatillasShop {
-  line-height: 6px;
-  font-size: 14px;
-}
-
-.contenedorCompraShop .textoCarta .precioShop {
-  color: #9F9F9F;
-  margin: 0;
-  font-size: 14px;
-}
-
-.contenedorCompraShop .contenedorPrecioBotonShop {
+body .baseLayout .navUp {
+  background-color: #E3E3E3;
+  width: 100vw;
+  height: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
-.contenedorCompraShop .contenedorPrecioBotonShop .botonShop {
-  background-color: #282828;
+body .baseLayout .navUp .logo {
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+}
+
+body .baseLayout .navUp .navContent {
+  background-color: yellowgreen;
+  width: 75vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 6px;
+}
+
+body .baseLayout .navUp .navContent .navbtn {
+  background-color: blueviolet;
+  width: 40px;
+  height: 40px;
   border-radius: 20px;
-  padding: 4px 15px 4px 15px;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  font-size: 12px;
-  -webkit-transition: ease all .25s;
-  transition: ease all .25s;
 }
 
-.contenedorCompraShop .contenedorPrecioBotonShop .botonShop:hover {
-  background-color: #404040;
+body .baseLayout .navUp .navContent .btn1 .search {
+  display: none;
 }
 
-.contenedorCompraShop .contenedorPrecioBotonShop .botonShop:active {
+body .baseLayout .divFlex {
+  width: 100vw;
+  height: auto;
+}
+
+body .baseLayout .divFlex .contentContainer {
   background-color: #9F9F9F;
+  width: 100vw;
+  height: 86vh;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/* Shop - fin */
-/* ContenidoPrincipal - fin */
-/* Aside - principio */
+body .baseLayout .divFlex .contentContainer .componentContainer {
+  background-color: khaki;
+  width: 100vw;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
+  background-color: #9F9F9F;
+  width: 100vw;
+  height: 240px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
+  background-color: blue;
+  width: 100vw;
+  height: 300px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
+  background-color: lightcoral;
+  width: 100vw;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
+  background-color: #275827;
+  width: 40vw;
+  height: 200px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
+  background-color: lightgrey;
+  width: 60vw;
+  height: 200px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent {
+  background-color: lightcoral;
+}
+
+body .baseLayout .divFlex .navDown {
+  background-color: #E3E3E3;
+  border-radius: 40px;
+  width: 100vw;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+body .baseLayout .divFlex .navDown .navbtn {
+  background-color: khaki;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
 .socialComponent {
-  margin: auto;
-  margin-top: 2%;
-  max-width: 424px;
+  width: 100vw;
   border: 2px solid #FFFFFF;
   border-radius: 1.7em;
   background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
@@ -231,13 +187,17 @@ body {
   gap: 10px;
 }
 
-.socialComponent .social .socialTittle {
+.socialComponent .social {
+  width: 50vw;
+}
+
+.socialComponent .social .social--tittle {
   color: white;
   font-size: larger;
   padding-left: 5px;
 }
 
-.socialComponent .social .socialCostumer {
+.socialComponent .social .social--costumer {
   color: white;
   font-size: medium;
   padding-left: 5px;
@@ -284,6 +244,7 @@ body {
 }
 
 .socialComponent .events {
+  width: 50vw;
   margin-top: 5px;
   padding-left: 10px;
 }
@@ -319,22 +280,141 @@ body {
   padding-top: 20px;
 }
 
-@media (min-width: 558px) {
-  .socialComponent .social .socialCostumersList .costumerPhoto {
+@media (min-width: 540px) {
+  /* -----   CONTAINER SIZE ----- */
+  body {
+    background-color: #9F9F9F;
+  }
+  body .baseLayout {
+    background-color: antiquewhite;
+  }
+  body .baseLayout .navUp {
+    background-color: #404040;
+  }
+  body .baseLayout .navUp .navContent {
+    width: 90vw;
+  }
+  body .baseLayout .navUp .navContent .navbtn {
+    background-color: violet;
+  }
+  body .baseLayout .navUp .navContent .btn1 {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+  body .baseLayout .navUp .navContent .btn1 .search {
+    display: initial;
+  }
+  body .baseLayout .navUp .navContent .btn1 .search input {
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+  }
+  body .baseLayout .divFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .baseLayout .divFlex .contentContainer {
+    background-color: aqua;
+    width: 91vw;
+    height: 93vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer {
+    width: 68.25vw;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
+    background-color: #9F9F9F;
+    width: 68.25vw;
+    height: 240px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
+    background-color: blue;
+    width: 68.25vw;
+    height: 160px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
+    background-color: lightcoral;
+    width: 68.25vw;
+    height: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
+    background-color: #275827;
+    width: 68.25vw;
+    height: 240px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
+    background-color: lightgrey;
+    width: 68.25vw;
+    height: 240px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent {
+    width: 91vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumerPhoto {
     width: 50px;
     height: 50px;
   }
-  .socialComponent .social .socialCostumersList .costumerDescription {
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumerDescription {
     font-size: small;
   }
-  .socialComponent .events .eventList .event .eventDate {
+  body .baseLayout .divFlex .contentContainer .socialComponent .line {
+    height: 2px;
+    width: 72.8vw;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDate {
     width: 50px;
     height: 50px;
   }
-  .socialComponent .events .eventList .event .eventDescription {
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription {
     font-size: small;
+  }
+  body .baseLayout .divFlex .navDown {
+    background-color: blue;
+    width: 9vw;
+    height: 93vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 0px;
+  }
+  body .baseLayout .divFlex .navDown .navbtn1 {
+    margin-top: 15px;
+  }
+  body .baseLayout .divFlex .navDown .navbtn5 {
+    margin-top: auto;
+    margin-bottom: 20px;
   }
 }
-
-/* Aside - fin */
 /*# sourceMappingURL=style.css.map */
