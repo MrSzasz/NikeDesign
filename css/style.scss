@@ -148,8 +148,139 @@ body {
                     
                 }
                 // #################--- SOCIAL COMPONENT ---##################
-                .socialComponent{
-                    background-color: lightcoral;
+                .socialComponent {
+                    width: $social__witdh;
+                    height: auto;
+                    border: 2px solid none;
+                    border-radius: 1.7em;
+                    background: linear-gradient(to top, #282828, #404040);
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    gap: 10px;
+                    .social{
+                        padding: 3px;
+                        width: fit-content;
+                        .social--tittle{
+                            color: white;
+                            font-size: larger;
+                            padding-left: 5px;
+                            padding-top: 7px;
+                            margin-bottom: 0px;
+                        }
+                        .social--costumer{
+                            color: #9F9F9F;
+                            font-size: small;
+                            padding-left: 5px;
+                            margin-top: 0px;
+                        }
+                        .socialCostumersList{
+                            padding-left: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 7px;
+                            .costumer{
+                                display: flex;
+                                align-items: flex-start;
+                                column-gap: 10px;
+                                .costumerPhoto{
+                                    background-image: url(../img/costumer.jpg);
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    border-radius: 30px;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                    align-items: flex-end;
+                                    .colorOnline{
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: lime;
+                                        border-radius: 4px;
+                                        
+                                    }
+                                    .colorOffline{
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: red;
+                                        border-radius: 4px;
+                                        
+                                    }
+                                }
+                                .costumerDescription{
+                                    width: 70px;
+                                    padding-left: 5px;
+                                    font-size: x-small;
+                                    color: white;
+                                    .costumerName{
+                                        p{
+                                            font-size: 12px;
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+                                    .costumerStatus{
+                                        p{
+                                            font-size: x-small;
+                                            color: #9F9F9F;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .line{
+                        background: linear-gradient(to top, #404040, #9F9F9F);
+                        width: 2px;
+                        height: 400px;
+                        align-self: center;
+                    }
+                    .events{
+                        width: fit-content;
+                        margin-top: 5px;
+                        padding-left: 10px;
+                        .eventTittle{
+                            color: white;
+                            font-size: larger;
+                            padding-left: 5px;
+                            padding-top: 7px;
+                            margin-bottom: 7px;
+                        }
+                        .eventList{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 7px;
+                            padding: 5px;
+                            .event{
+                                display: flex;
+                                gap: 10px;
+                                .eventDate{
+                                    background-image: url(../img/date.jpg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    border-radius: 10px;
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                                .eventDescription{
+                                    padding-left: 5px;
+                                    font-size: x-small;
+                                    .eventName{
+                                        color: white;
+                                        text-transform: capitalize;
+                                    }
+                                    .eventLocation{
+                                        color: $color3;
+                                    }
+                                }
+                            }
+                            .event1{
+                                padding-top: 20px;
+                            }
+                        }
+                    }
                 }
             }
             // -----+++++----- FOOTER Navigation Down -----+++++-----
@@ -174,6 +305,7 @@ body {
     }
 }
 
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    MEDIA QUERY    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @media (min-width: 540px) {
     
@@ -206,7 +338,7 @@ body {
     $board__widht: $graficoBoard__widht;
     $board__height: $graficoBoard__height;
     //1.2.1.2 SocialContainer
-    $social__witdh: $contentContainer__width;
+    $social__witdh: $contentContainer__width * 0.25;
     
     
     
@@ -286,40 +418,109 @@ body {
                         
                     }
                     // #################--- SOCIAL COMPONENT ---##################
-                    .socialComponent{
+                    .socialComponent {
                         width: $social__witdh;
+                        height: fit-content;
+                        background: linear-gradient(to top, #282828, #404040);
+                        padding: 10px, 0px, 0px, 10px;
+                        justify-content: flex-start;
                         flex-direction: column;
-                        align-items: center;
+                        align-items: flex-start;
+                        gap: 5px;
                         .social{
+                            width: $social__witdh;
+                            .social--tittle{
+                                font-size: medium;
+                            }
+                            .social--costumer{
+                                font-size: x-small;
+                            }
                             .socialCostumersList{
-                                .costumerPhoto{
-                                    width: 50px;
-                                    height: 50px;
-                                }
-                                .costumerDescription{
-                                    font-size: small;
+                                padding-top: 0px;
+                                padding-left: 4px;
+                                gap: 1px;
+                                .costumer{
+                                    column-gap: 7px;
+                                    .costumerPhoto{
+                                        width: 30px;
+                                        height: 30px;
+                                        .colorOnline{
+                                            width: 7px;
+                                            height: 7px;
+                                        }
+                                        .colorOffline{
+                                            width: 7px;
+                                            height: 7px;
+                                        }
+                                    }
+                                    .costumerDescription{
+                                        width: 85px;
+                                        .costumerName{
+                                            p{
+                                                font-size: 9px;
+                                            }
+                                        }
+                                        .costumerStatus{
+                                            p{
+                                                font-size: xx-small;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                         .line{
+                            background-color: $color3;
+                            width: 50px;
                             height: 2px;
-                            width: ($social__witdh * 0.8);
+                            align-self: initial;
+                            margin-left: 12px;
+                            border-radius: 1px;
+                            
                         }
                         .events{
+                            width: $social__witdh;
+                            margin-top: 3px;
+                            .eventTittle{
+                                font-size: medium;
+                                padding-top: 0;
+                                margin-bottom: 2px;
+                            }
                             .eventList{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1px;
+                                padding: 0px, 5px, 0px, 5px;
                                 .event{
+                                    display: flex;
+                                    gap: 7px;
                                     .eventDate{
-                                        width: 50px;
-                                        height: 50px;
+                                        width: 30px;
+                                        height: 30px;
                                     }
                                     .eventDescription{
-                                        font-size: small;
+                                        font-size: xx-small;
+                                        .eventName{
+                                            margin-bottom: 0px;
+                                            padding: 0px;
+                                            p{
+                                                padding: 0;
+                                                margin: 0;
+                                            }
+                                        }
+                                        .eventLocation{
+                                            margin-top: 0px;
+                                            padding: 0px;
+                                        }
                                     }
+                                }
+                                .event1{
+                                    padding-top: 20px;
                                 }
                             }
                         }
                     }
-                }
+                }    
                 .navDown{
                     background-color: blue;
                     width: $navDown__width;
@@ -338,9 +539,6 @@ body {
             }
         }
     }
-
-    
-    
 }
 
 

@@ -140,7 +140,192 @@ body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardCon
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent {
-  background-color: lightcoral;
+  width: 100vw;
+  height: auto;
+  border: 2px solid none;
+  border-radius: 1.7em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+  background: linear-gradient(to top, #282828, #404040);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social {
+  padding: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .social--tittle {
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-bottom: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .social--costumer {
+  color: #9F9F9F;
+  font-size: small;
+  padding-left: 5px;
+  margin-top: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList {
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto {
+  background-image: url(../img/costumer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOnline {
+  width: 10px;
+  height: 10px;
+  background-color: lime;
+  border-radius: 4px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOffline {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 4px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription {
+  width: 70px;
+  padding-left: 5px;
+  font-size: x-small;
+  color: white;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerName p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerStatus p {
+  font-size: x-small;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .line {
+  background: -webkit-gradient(linear, left bottom, left top, from(#404040), to(#9F9F9F));
+  background: linear-gradient(to top, #404040, #9F9F9F);
+  width: 2px;
+  height: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventTittle {
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-bottom: 7px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+  padding: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDate {
+  background-image: url(../img/date.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription {
+  padding-left: 5px;
+  font-size: x-small;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName {
+  color: white;
+  text-transform: capitalize;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventLocation {
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event1 {
+  padding-top: 20px;
 }
 
 body .baseLayout .divFlex .navDown {
@@ -169,115 +354,6 @@ body .baseLayout .divFlex .navDown .navbtn {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-}
-
-.socialComponent {
-  width: 100vw;
-  border: 2px solid #FFFFFF;
-  border-radius: 1.7em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
-  background: linear-gradient(to top, #282828, #404040);
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-.socialComponent .social {
-  width: 50vw;
-}
-
-.socialComponent .social .social--tittle {
-  color: white;
-  font-size: larger;
-  padding-left: 5px;
-}
-
-.socialComponent .social .social--costumer {
-  color: white;
-  font-size: medium;
-  padding-left: 5px;
-}
-
-.socialComponent .social .socialCostumersList {
-  padding-left: 5px;
-}
-
-.socialComponent .social .socialCostumersList .costumer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-}
-
-.socialComponent .social .socialCostumersList .costumer .costumerPhoto {
-  background-image: url(../img/costumer.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-}
-
-.socialComponent .social .socialCostumersList .costumer .costumerDescription {
-  width: 70px;
-  padding-left: 5px;
-  font-size: x-small;
-  color: white;
-}
-
-.socialComponent .line {
-  background-color: #9F9F9F;
-  width: 2px;
-  height: 500px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.socialComponent .events {
-  width: 50vw;
-  margin-top: 5px;
-  padding-left: 10px;
-}
-
-.socialComponent .events .eventList {
-  padding: 5px;
-}
-
-.socialComponent .events .eventList .event {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-.socialComponent .events .eventList .event .eventDate {
-  background-image: url(../img/date.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-}
-
-.socialComponent .events .eventList .event .eventDescription {
-  color: white;
-  padding-left: 5px;
-  font-size: x-small;
-}
-
-.socialComponent .events .eventList .event1 {
-  padding-top: 20px;
 }
 
 @media (min-width: 540px) {
@@ -369,32 +445,121 @@ body .baseLayout .divFlex .navDown .navbtn {
     height: 240px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent {
-    width: 91vw;
+    width: 22.75vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+    background: linear-gradient(to top, #282828, #404040);
+    padding: 10px, 0px, 0px, 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5px;
   }
-  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumerPhoto {
-    width: 50px;
-    height: 50px;
+  body .baseLayout .divFlex .contentContainer .socialComponent .social {
+    width: 22.75vw;
   }
-  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumerDescription {
-    font-size: small;
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .social--tittle {
+    font-size: medium;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .social--costumer {
+    font-size: x-small;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList {
+    padding-top: 0px;
+    padding-left: 4px;
+    gap: 1px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer {
+    -webkit-column-gap: 7px;
+            column-gap: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto {
+    width: 30px;
+    height: 30px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOnline {
+    width: 7px;
+    height: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOffline {
+    width: 7px;
+    height: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription {
+    width: 85px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerName p {
+    font-size: 9px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerStatus p {
+    font-size: xx-small;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .line {
+    background-color: #9F9F9F;
+    width: 50px;
     height: 2px;
-    width: 72.8vw;
+    -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial;
+    margin-left: 12px;
+    border-radius: 1px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events {
+    width: 22.75vw;
+    margin-top: 3px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventTittle {
+    font-size: medium;
+    padding-top: 0;
+    margin-bottom: 2px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1px;
+    padding: 0px, 5px, 0px, 5px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDate {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription {
-    font-size: small;
+    font-size: xx-small;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName p {
+    padding: 0;
+    margin: 0;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventLocation {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event1 {
+    padding-top: 20px;
   }
   body .baseLayout .divFlex .navDown {
     background-color: blue;
