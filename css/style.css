@@ -103,9 +103,131 @@ body .baseLayout .divFlex .contentContainer .componentContainer {
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
-  background-color: #9F9F9F;
+  background-color: #282828;
   width: 100vw;
-  height: 240px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 115px 115px 115px;
+      grid-template-columns: 115px 115px 115px;
+  -ms-grid-rows: 170px 115px;
+      grid-template-rows: 170px 115px;
+      grid-template-areas: "item1 item1 item1" "item2 item3 item4";
+  gap: 8px;
+  padding: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+  border-radius: 1em;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item1;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa1.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item2;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa2.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item3;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa3.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item4;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa4.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  padding: 20px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--tittle {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20px 0px 0px 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--descrip {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 8px;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .main--price {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .before--price {
+  font-weight: lighter;
+  text-decoration: line-through;
+  color: #9F9F9F;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .total--discount {
+  margin: 0px;
+  padding: 0px;
+  color: #27b927;
+  font-size: 11px;
+  padding-left: 3px;
+  margin-bottom: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .btnDiscover {
+  border: 0px none solid;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  padding: 3px 15px 3px 15px;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
@@ -445,9 +567,43 @@ body .baseLayout .divFlex .navDown .navbtn {
     width: 68.25vw;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
-    background-color: #9F9F9F;
     width: 68.25vw;
-    height: 240px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "item1 item1 item2 item3" "item1 item1 item2 item4";
+    gap: 10px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+    border-radius: 1em;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-size: contain;
+    background-position-y: bottom;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
     background-color: blue;

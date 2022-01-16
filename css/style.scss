@@ -116,9 +116,82 @@ body {
                     width: $componentContainer__width;
                     // #################--- ZAPATILLAS COMPONENT---##################
                     .zapatillasComponent{
-                        background-color: $color3;
+                        background-color: $color1;
                         width: $zapatillasContainer__width;
-                        height: $zapatillasContainer__height;
+                        height: auto;
+                        display: grid;
+                        justify-content: center;
+                        grid-template-columns: 115px 115px 115px;
+                        grid-template-rows: 170px 115px;
+                        grid-template-areas: 
+                        "item1 item1 item1"
+                        "item2 item3 item4";
+                        gap: 8px;
+                        padding: 10px;
+                        .item{
+                            border-radius: 1em;
+                        }
+                        @for $i from 1 through 4 {
+                            .item#{$i}{
+                                grid-area: item#{$i};
+                                background-color: #FFFFFF;
+                                background-image: url(../img/zapa#{$i}.png);
+                                background-size: contain;
+                                background-position-y: bottom;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .item1{
+                            padding: 20px;
+                            .zapa--tittle{
+                                font-weight: bolder;
+                                text-transform: uppercase;
+                                font-size: 13px;
+                                margin: 20px 0px 0px 0px;
+                            }
+                            .zapa--descrip{
+                                font-weight: lighter;
+                                text-transform: capitalize;
+                                font-size: 8px;
+                                color: #9F9F9F;
+                            }
+                            .price{
+                                display: flex;
+                                align-items: baseline;
+                                .main--price{
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    padding-right: 5px;
+
+                                }
+                                .before--price{
+                                    font-weight: lighter;
+                                    text-decoration: line-through;
+                                    color: #9F9F9F;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    font-size: 10px;
+                                }
+                            }
+                            .total--discount{
+                                margin: 0px;
+                                padding: 0px;
+                                color: rgb(39, 185, 39);
+                                font-size: 11px;
+                                padding-left: 3px;
+                                margin-bottom: 5px;
+
+                            }
+                            .btnDiscover{
+                                border: 0px none solid;
+                                border-radius: 20px;
+                                color: $color5;
+                                font-size: 10px;
+                                padding: 3px 15px 3px 15px;
+                            }
+                        }
                     }
                     // #################--- ZAPATILLAS SHOP COMPONENT ---##################
                     .zapatillasShop{
@@ -393,10 +466,30 @@ body {
                         width: $componentContainer__width;
                         // #################--- ZAPATILLAS COMPONENT ---##################
                         .zapatillasComponent{
-                            background-color: $color3;
                             width: $zapatillasContainer__width;
-                            height: $zapatillasContainer__height;
+                            justify-content: center;
+                            grid-template-columns: 1fr 1fr 1fr 0.5fr;
+                            grid-template-rows: auto auto;
+                            grid-template-areas: 
+                            "item1 item1 item2 item3"
+                            "item1 item1 item2 item4";
+                            gap: 10px;
+                            .item{
+                                border-radius: 1em;
+                            }
+                            @for $i from 1 through 4 {
+                                .item#{$i}{
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                            }
+                            .item1{
+                                background-size: contain;
+                                background-position-y: bottom;
+                            }
                         }
+                        
                         // #################---  ZAPATILLAS SHOP COMPONENT ---##################
                         .zapatillasShop{
                             background-color: blue;
