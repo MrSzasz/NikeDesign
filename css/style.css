@@ -29,7 +29,6 @@ body {
 }
 
 body .baseLayout {
-  background-color: #282828;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -42,7 +41,6 @@ body .baseLayout {
 }
 
 body .baseLayout .navUp {
-  background-color: #E3E3E3;
   width: 100vw;
   height: 7vh;
   display: -webkit-box;
@@ -57,13 +55,13 @@ body .baseLayout .navUp {
 }
 
 body .baseLayout .navUp .logo {
-  background-color: blueviolet;
+  background-image: url(../img/logo.jpg);
+  background-size: contain;
   width: 50px;
   height: 50px;
 }
 
 body .baseLayout .navUp .navContent {
-  background-color: yellowgreen;
   width: 75vw;
   height: 50px;
   display: -webkit-box;
@@ -83,14 +81,46 @@ body .baseLayout .navUp .navContent {
 }
 
 body .baseLayout .navUp .navContent .navbtn {
-  background-color: blueviolet;
+  background-color: #404040;
   width: 40px;
   height: 40px;
   border-radius: 20px;
 }
 
+body .baseLayout .navUp .navContent .btn1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E3E3E3;
+}
+
 body .baseLayout .navUp .navContent .btn1 .search {
   display: none;
+}
+
+body .baseLayout .navUp .navContent .btn2 {
+  font-size: 20px;
+  color: #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .baseLayout .navUp .navContent .btn3 {
+  background-image: url(../img/costumer4.png);
+  background-size: contain;
 }
 
 body .baseLayout .divFlex {
@@ -99,7 +129,6 @@ body .baseLayout .divFlex {
 }
 
 body .baseLayout .divFlex .contentContainer {
-  background-color: #9F9F9F;
   width: 100vw;
   height: 86vh;
   overflow-x: scroll;
@@ -113,20 +142,143 @@ body .baseLayout .divFlex .contentContainer {
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer {
-  background-color: khaki;
   width: 100vw;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
-  background-color: #9F9F9F;
   width: 100vw;
-  height: 240px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 115px 115px 115px;
+      grid-template-columns: 115px 115px 115px;
+  -ms-grid-rows: 170px 115px;
+      grid-template-rows: 170px 115px;
+      grid-template-areas: "item1 item1 item1" "item2 item3 item4";
+  gap: 8px;
+  padding: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+  border-radius: 1em;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item1;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa1.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item2;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa2.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item3;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa3.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item4;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa4.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  padding: 20px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--tittle {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20px 0px 0px 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--descrip {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 8px;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .main--price {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .before--price {
+  font-weight: lighter;
+  text-decoration: line-through;
+  color: #9F9F9F;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .total--discount {
+  margin: 0px;
+  padding: 0px;
+  color: #27b927;
+  font-size: 11px;
+  padding-left: 3px;
+  margin-bottom: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .btnDiscover {
+  border: 0px none solid;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  padding: 3px 15px 3px 15px;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
-  background-color: blue;
   width: 100vw;
   height: auto;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .contenedorHeaderShop .shopTitulo {
+  color: #9F9F9F;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper {
@@ -314,7 +466,7 @@ body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCost
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto {
-  background-image: url(../img/costumer.jpg);
+  background-image: url(../img/costumer1.png);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 30px;
@@ -361,6 +513,38 @@ body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCost
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerStatus p {
   font-size: x-small;
   color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer1 .costumerPhoto {
+  background-image: url(../img/costumer1.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer2 .costumerPhoto {
+  background-image: url(../img/costumer2.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer3 .costumerPhoto {
+  background-image: url(../img/costumer3.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer4 .costumerPhoto {
+  background-image: url(../img/costumer4.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer5 .costumerPhoto {
+  background-image: url(../img/costumer5.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer6 .costumerPhoto {
+  background-image: url(../img/costumer6.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer7 .costumerPhoto {
+  background-image: url(../img/costumer7.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer8 .costumerPhoto {
+  background-image: url(../img/costumer8.png);
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .line {
@@ -437,7 +621,6 @@ body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList 
 }
 
 body .baseLayout .divFlex .navDown {
-  background-color: #E3E3E3;
   border-radius: 40px;
   width: 100vw;
   height: 7vh;
@@ -458,28 +641,32 @@ body .baseLayout .divFlex .navDown {
 }
 
 body .baseLayout .divFlex .navDown .navbtn {
-  background-color: khaki;
+  background-color: grey;
   width: 40px;
   height: 40px;
   border-radius: 10px;
+  color: #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+body .baseLayout .divFlex .navDown .navbtn1 {
+  background-color: #E3E3E3;
+  color: black;
 }
 
 @media (min-width: 540px) {
   /* -----   CONTAINER SIZE ----- */
-  body {
-    background-color: #9F9F9F;
-  }
-  body .baseLayout {
-    background-color: antiquewhite;
-  }
-  body .baseLayout .navUp {
-    background-color: #404040;
-  }
   body .baseLayout .navUp .navContent {
     width: 90vw;
-  }
-  body .baseLayout .navUp .navContent .navbtn {
-    background-color: violet;
   }
   body .baseLayout .navUp .navContent .btn1 {
     width: 300px;
@@ -490,6 +677,9 @@ body .baseLayout .divFlex .navDown .navbtn {
         -ms-flex-align: center;
             align-items: center;
     margin-right: auto;
+  }
+  body .baseLayout .navUp .navContent .btn1 .abc {
+    display: none;
   }
   body .baseLayout .navUp .navContent .btn1 .search {
     display: initial;
@@ -509,7 +699,6 @@ body .baseLayout .divFlex .navDown .navbtn {
             flex-direction: row-reverse;
   }
   body .baseLayout .divFlex .contentContainer {
-    background-color: aqua;
     width: 91vw;
     height: 93vh;
     -webkit-box-orient: horizontal;
@@ -521,12 +710,45 @@ body .baseLayout .divFlex .navDown .navbtn {
     width: 68.25vw;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
-    background-color: #9F9F9F;
     width: 68.25vw;
-    height: 240px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "item1 item1 item2 item3" "item1 item1 item2 item4";
+    gap: 10px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+    border-radius: 1em;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-size: contain;
+    background-position-y: bottom;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
-    background-color: blue;
     width: 68.25vw;
     height: auto;
   }
@@ -557,8 +779,6 @@ body .baseLayout .divFlex .navDown .navbtn {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
-    background: linear-gradient(to top, #282828, #404040);
     padding: 10px, 0px, 0px, 10px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -573,7 +793,9 @@ body .baseLayout .divFlex .navDown .navbtn {
     gap: 5px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .social {
-    width: 22.75vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .social .social--tittle {
     font-size: medium;
@@ -622,7 +844,9 @@ body .baseLayout .divFlex .navDown .navbtn {
     border-radius: 1px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .events {
-    width: 22.75vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-top: 3px;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent .events .eventTittle {
@@ -670,7 +894,6 @@ body .baseLayout .divFlex .navDown .navbtn {
     padding-top: 20px;
   }
   body .baseLayout .divFlex .navDown {
-    background-color: blue;
     width: 9vw;
     height: 93vh;
     -webkit-box-orient: vertical;
