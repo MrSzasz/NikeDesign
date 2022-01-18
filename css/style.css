@@ -1,1 +1,920 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=styles.css.map */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@font-face {
+  font-family: Circular;
+  src: url(../fuentes/CircularStd-Book.otf);
+}
+
+@font-face {
+  font-family: CircularMedium;
+  src: url(../fuentes/CircularStd-Medium.otf);
+}
+
+@font-face {
+  font-family: CircularBold;
+  src: url(../fuentes/CircularStd-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variables */
+/* -----   CONTAINER SIZE ----- */
+body {
+  background-color: #282828;
+  font-family: Circular;
+}
+
+body .baseLayout {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .baseLayout .navUp {
+  width: 100vw;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .baseLayout .navUp .logo {
+  background-image: url(../img/logo.jpg);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+body .baseLayout .navUp .navContent {
+  width: 75vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 6px;
+}
+
+body .baseLayout .navUp .navContent .navbtn {
+  background-color: #404040;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+body .baseLayout .navUp .navContent .btn1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E3E3E3;
+}
+
+body .baseLayout .navUp .navContent .btn1 .search {
+  display: none;
+}
+
+body .baseLayout .navUp .navContent .btn2 {
+  font-size: 20px;
+  color: #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .baseLayout .navUp .navContent .btn3 {
+  background-image: url(../img/costumer4.png);
+  background-size: contain;
+}
+
+body .baseLayout .divFlex {
+  width: 100vw;
+  height: auto;
+}
+
+body .baseLayout .divFlex .contentContainer {
+  width: 100vw;
+  height: 86vh;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer {
+  width: 100vw;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
+  width: 100vw;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 115px 115px 115px;
+      grid-template-columns: 115px 115px 115px;
+  -ms-grid-rows: 170px 115px;
+      grid-template-rows: 170px 115px;
+      grid-template-areas: "item1 item1 item1" "item2 item3 item4";
+  gap: 8px;
+  padding: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+  border-radius: 1em;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item1;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa1.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item2;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa2.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item3;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa3.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item4;
+  background-color: #FFFFFF;
+  background-image: url(../img/zapa4.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+  padding: 20px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--tittle {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20px 0px 0px 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .zapa--descrip {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 8px;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .main--price {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .price .before--price {
+  font-weight: lighter;
+  text-decoration: line-through;
+  color: #9F9F9F;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .total--discount {
+  margin: 0px;
+  padding: 0px;
+  color: #27b927;
+  font-size: 11px;
+  padding-left: 3px;
+  margin-bottom: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 .btnDiscover {
+  border: 0px none solid;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  padding: 3px 15px 3px 15px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
+  width: 100vw;
+  height: auto;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .contenedorHeaderShop .shopTitulo {
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper {
+  min-height: 135px;
+  min-width: 120px;
+  border: 1px solid #404040;
+  border-radius: 1.7em;
+  background: linear-gradient(320deg, #282828, #404040);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease all .25s;
+  transition: ease all .25s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper img {
+  height: 120px;
+  width: auto;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper:hover {
+  border: 3px solid #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta .nombreZapatillasShop {
+  margin-top: 5%;
+  font-size: 1em;
+  line-height: 6px;
+  font-size: 14px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta .precioShop {
+  color: #9F9F9F;
+  margin: 0;
+  font-size: 14px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop {
+  background-color: #282828;
+  border-radius: 20px;
+  padding: 4px 15px 4px 15px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-size: 12px;
+  -webkit-transition: ease all .25s;
+  transition: ease all .25s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop:active {
+  background-color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
+  background-color: lightcoral;
+  width: 100vw;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
+  background-color: #275827;
+  width: 40vw;
+  height: 200px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
+  background-color: lightgrey;
+  width: 60vw;
+  height: 200px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent {
+  width: 100vw;
+  height: auto;
+  border: 2px solid none;
+  border-radius: 1.7em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+  background: linear-gradient(to top, #282828, #404040);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social {
+  padding: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .social--tittle {
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-bottom: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .social--costumer {
+  color: #9F9F9F;
+  font-size: small;
+  padding-left: 5px;
+  margin-top: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList {
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto {
+  background-image: url(../img/costumer1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOnline {
+  width: 10px;
+  height: 10px;
+  background-color: lime;
+  border-radius: 4px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOffline {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 4px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription {
+  width: 70px;
+  padding-left: 5px;
+  font-size: x-small;
+  color: white;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerName p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerStatus p {
+  font-size: x-small;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer1 .costumerPhoto {
+  background-image: url(../img/costumer1.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer2 .costumerPhoto {
+  background-image: url(../img/costumer2.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer3 .costumerPhoto {
+  background-image: url(../img/costumer3.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer4 .costumerPhoto {
+  background-image: url(../img/costumer4.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer5 .costumerPhoto {
+  background-image: url(../img/costumer5.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer6 .costumerPhoto {
+  background-image: url(../img/costumer6.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer7 .costumerPhoto {
+  background-image: url(../img/costumer7.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer8 .costumerPhoto {
+  background-image: url(../img/costumer8.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .line {
+  background: -webkit-gradient(linear, left bottom, left top, from(#404040), to(#9F9F9F));
+  background: linear-gradient(to top, #404040, #9F9F9F);
+  width: 2px;
+  height: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventTittle {
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-bottom: 7px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+  padding: 5px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDate {
+  background-image: url(../img/date.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription {
+  padding-left: 5px;
+  font-size: x-small;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName {
+  color: white;
+  text-transform: capitalize;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventLocation {
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event1 {
+  padding-top: 20px;
+}
+
+body .baseLayout .divFlex .navDown {
+  border-radius: 40px;
+  width: 100vw;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+body .baseLayout .divFlex .navDown .navbtn {
+  background-color: grey;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: #E3E3E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+body .baseLayout .divFlex .navDown .navbtn1 {
+  background-color: #E3E3E3;
+  color: black;
+}
+
+@media (min-width: 540px) {
+  /* -----   CONTAINER SIZE ----- */
+  body .baseLayout .navUp .navContent {
+    width: 90vw;
+  }
+  body .baseLayout .navUp .navContent .btn1 {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+  body .baseLayout .navUp .navContent .btn1 .abc {
+    display: none;
+  }
+  body .baseLayout .navUp .navContent .btn1 .search {
+    display: initial;
+  }
+  body .baseLayout .navUp .navContent .btn1 .search input {
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+  }
+  body .baseLayout .divFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .baseLayout .divFlex .contentContainer {
+    width: 91vw;
+    height: 93vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer {
+    width: 68.25vw;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent {
+    width: 68.25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "item1 item1 item2 item3" "item1 item1 item2 item4";
+    gap: 10px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item {
+    border-radius: 1em;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
+    background-size: contain;
+    background-position-y: bottom;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
+    width: 68.25vw;
+    height: auto;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
+    background-color: lightcoral;
+    width: 68.25vw;
+    height: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
+    background-color: #275827;
+    width: 68.25vw;
+    height: 240px;
+  }
+  body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
+    background-color: lightgrey;
+    width: 68.25vw;
+    height: 240px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent {
+    width: 22.75vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px, 0px, 0px, 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .social--tittle {
+    font-size: medium;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .social--costumer {
+    font-size: x-small;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList {
+    padding-top: 0px;
+    padding-left: 4px;
+    gap: 1px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer {
+    -webkit-column-gap: 7px;
+            column-gap: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto {
+    width: 30px;
+    height: 30px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOnline {
+    width: 7px;
+    height: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerPhoto .colorOffline {
+    width: 7px;
+    height: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription {
+    width: 85px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerName p {
+    font-size: 9px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer .costumerDescription .costumerStatus p {
+    font-size: xx-small;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .line {
+    background-color: #9F9F9F;
+    width: 50px;
+    height: 2px;
+    -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial;
+    margin-left: 12px;
+    border-radius: 1px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 3px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventTittle {
+    font-size: medium;
+    padding-top: 0;
+    margin-bottom: 2px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1px;
+    padding: 0px, 5px, 0px, 5px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDate {
+    width: 30px;
+    height: 30px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription {
+    font-size: xx-small;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventName p {
+    padding: 0;
+    margin: 0;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event .eventDescription .eventLocation {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  body .baseLayout .divFlex .contentContainer .socialComponent .events .eventList .event1 {
+    padding-top: 20px;
+  }
+  body .baseLayout .divFlex .navDown {
+    width: 9vw;
+    height: 93vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 0px;
+  }
+  body .baseLayout .divFlex .navDown .navbtn1 {
+    margin-top: 15px;
+  }
+  body .baseLayout .divFlex .navDown .navbtn5 {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> layout
