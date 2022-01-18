@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@font-face {
+  font-family: Circular;
+  src: url(../fuentes/CircularStd-Book.otf);
+}
+
+@font-face {
+  font-family: CircularMedium;
+  src: url(../fuentes/CircularStd-Medium.otf);
+}
+
+@font-face {
+  font-family: CircularBold;
+  src: url(../fuentes/CircularStd-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +25,7 @@
 /* -----   CONTAINER SIZE ----- */
 body {
   background-color: #282828;
-  font-family: "Proza Libre", sans-serif;
+  font-family: Circular;
 }
 
 body .baseLayout {
@@ -111,7 +126,100 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasCompo
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
   background-color: blue;
   width: 100vw;
-  height: 300px;
+  height: auto;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper {
+  min-height: 135px;
+  min-width: 120px;
+  border: 1px solid #404040;
+  border-radius: 1.7em;
+  background: linear-gradient(320deg, #282828, #404040);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease all .25s;
+  transition: ease all .25s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper img {
+  height: 120px;
+  width: auto;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .zapatillaShoper:hover {
+  border: 3px solid #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta .nombreZapatillasShop {
+  margin-top: 5%;
+  font-size: 1em;
+  line-height: 6px;
+  font-size: 14px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta .precioShop {
+  color: #9F9F9F;
+  margin: 0;
+  font-size: 14px;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop {
+  background-color: #282828;
+  border-radius: 20px;
+  padding: 4px 15px 4px 15px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-size: 12px;
+  -webkit-transition: ease all .25s;
+  transition: ease all .25s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .contenedorPrecioBotonShop .botonShop:active {
+  background-color: #9F9F9F;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
@@ -420,7 +528,7 @@ body .baseLayout .divFlex .navDown .navbtn {
   body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop {
     background-color: blue;
     width: 68.25vw;
-    height: 160px;
+    height: auto;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
     background-color: lightcoral;
