@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/*# sourceMappingURL=styles.css.map */
-=======
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
 @font-face {
   font-family: Circular;
@@ -55,6 +52,10 @@ body .baseLayout .navUp {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: #282828;
+  background: radial-gradient(circle, #282828 0%, #404040 66%, #404040 100%);
 }
 
 body .baseLayout .navUp .logo {
@@ -62,6 +63,7 @@ body .baseLayout .navUp .logo {
   background-size: contain;
   width: 50px;
   height: 50px;
+  margin: auto;
 }
 
 body .baseLayout .navUp .navContent {
@@ -101,10 +103,17 @@ body .baseLayout .navUp .navContent .btn1 {
       -ms-flex-align: center;
           align-items: center;
   color: #E3E3E3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body .baseLayout .navUp .navContent .btn1 .search {
   display: none;
+}
+
+body .baseLayout .navUp .navContent .btn1:hover {
+  background-color: #E3E3E3;
+  color: #282828;
 }
 
 body .baseLayout .navUp .navContent .btn2 {
@@ -119,6 +128,13 @@ body .baseLayout .navUp .navContent .btn2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .baseLayout .navUp .navContent .btn2:hover {
+  background-color: #E3E3E3;
+  color: #282828;
 }
 
 body .baseLayout .navUp .navContent .btn3 {
@@ -179,6 +195,14 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasCompo
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 1px solid #282828;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2 {
@@ -190,6 +214,14 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasCompo
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 1px solid #282828;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3 {
@@ -201,6 +233,14 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasCompo
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 1px solid #282828;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4 {
@@ -212,6 +252,14 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasCompo
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item4:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 1px solid #282828;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasComponent .item1 {
@@ -335,6 +383,7 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop 
   font-size: 1em;
   line-height: 6px;
   font-size: 14px;
+  color: #FFFFFF;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop .row .contenedorZapatillaShop .contenedorCompraShop .textoCarta .precioShop {
@@ -378,28 +427,68 @@ body .baseLayout .divFlex .contentContainer .componentContainer .zapatillasShop 
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
-  background-color: lightcoral;
   width: 100vw;
-  height: 200px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
-  background-color: #275827;
-  width: 40vw;
-  height: 200px;
+  width: 100vw;
+  height: auto;
+  padding: 3vw;
+  background: #404040;
+  background: radial-gradient(circle, #404040 0%, #282828 28%, #404040 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#404040",GradientType=1);
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer form {
+  color: #E3E3E3;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
-  background-color: lightgrey;
-  width: 60vw;
-  height: 200px;
+  width: 100vw;
+  height: auto;
+  padding: 2vw;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer ol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer ol .list-color-one {
+  background-color: #404040;
+  color: #9F9F9F;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer ol .list-color-two {
+  background-color: #9F9F9F;
+  color: #282828;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer ol .list-color-one:hover {
+  border: 3px solid #E3E3E3;
+  border-radius: 15px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer ol .list-color-two:hover {
+  border: 3px solid #E3E3E3;
+  border-radius: 15px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent {
@@ -518,36 +607,108 @@ body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCost
   color: #9F9F9F;
 }
 
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer1 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer1 .costumerPhoto {
   background-image: url(../img/costumer1.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer1:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer2 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer2 .costumerPhoto {
   background-image: url(../img/costumer2.png);
 }
 
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer2:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer3 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer3 .costumerPhoto {
   background-image: url(../img/costumer3.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer3:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer4 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer4 .costumerPhoto {
   background-image: url(../img/costumer4.png);
 }
 
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer4:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer5 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer5 .costumerPhoto {
   background-image: url(../img/costumer5.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer5:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer6 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer6 .costumerPhoto {
   background-image: url(../img/costumer6.png);
 }
 
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer6:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer7 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer7 .costumerPhoto {
   background-image: url(../img/costumer7.png);
 }
 
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer7:hover {
+  background-color: #404040;
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer8 {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer8 .costumerPhoto {
   background-image: url(../img/costumer8.png);
+}
+
+body .baseLayout .divFlex .contentContainer .socialComponent .social .socialCostumersList .costumer8:hover {
+  background-color: #404040;
 }
 
 body .baseLayout .divFlex .contentContainer .socialComponent .line {
@@ -627,6 +788,10 @@ body .baseLayout .divFlex .navDown {
   border-radius: 40px;
   width: 100vw;
   height: 7vh;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: #282828;
+  background: radial-gradient(circle, #282828 0%, #404040 93%, #404040 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,11 +824,13 @@ body .baseLayout .divFlex .navDown .navbtn {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-body .baseLayout .divFlex .navDown .navbtn1 {
+body .baseLayout .divFlex .navDown .navbtn:hover {
   background-color: #E3E3E3;
-  color: black;
+  color: #282828;
 }
 
 @media (min-width: 540px) {
@@ -756,9 +923,8 @@ body .baseLayout .divFlex .navDown .navbtn1 {
     height: auto;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
-    background-color: lightcoral;
     width: 68.25vw;
-    height: 240px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -768,14 +934,14 @@ body .baseLayout .divFlex .navDown .navbtn1 {
             flex-direction: row;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
-    background-color: #275827;
     width: 68.25vw;
-    height: 240px;
+    height: 300px;
+    overflow-y: scroll;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
-    background-color: lightgrey;
     width: 68.25vw;
-    height: 240px;
+    height: 300px;
+    overflow-y: scroll;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent {
     width: 22.75vw;
@@ -917,4 +1083,3 @@ body .baseLayout .divFlex .navDown .navbtn1 {
   }
 }
 /*# sourceMappingURL=style.css.map */
->>>>>>> layout
