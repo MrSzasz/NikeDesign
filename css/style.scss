@@ -747,5 +747,21 @@ body {
 
 
 
-
+$galeriaTerapias: ("item1": "ventosas2.jpg", 
+                    "item2": "reflexologia2.jpg", 
+                    "item3": "masajefacial1.jpg", 
+                    "item4": "guasha3.jpg", 
+                    "item5": "guasha1.jpg", 
+                    "item6": "auriculoterapia.jpg", 
+                    "item7": "masajefacial2.jpg", 
+                    "item8": "acupuntura1.jpg", 
+                    "item9": "ventosas3.jpeg", 
+                    "item10": "acupuntura2.jpg");
+.contenedorGaleria{
+    @each $key, $value in $galeriaTerapias{
+        .#{$key}{
+            background-image: url(../imagenes/#{$value});
+        }
+    }
+}
 
