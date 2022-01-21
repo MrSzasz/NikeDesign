@@ -334,16 +334,14 @@ body {
                             width: $grafico__widht;
                             height: $grafico__height;
                             padding: 3vw;
-                            background: rgb(64,64,64);
-                            background: -moz-radial-gradient(circle, rgba(64,64,64,1) 0%, rgba(40,40,40,1) 28%, rgba(64,64,64,1) 100%);
-                            background: -webkit-radial-gradient(circle, rgba(64,64,64,1) 0%, rgba(40,40,40,1) 28%, rgba(64,64,64,1) 100%);
-                            background: radial-gradient(circle, rgba(64,64,64,1) 0%, rgba(40,40,40,1) 28%, rgba(64,64,64,1) 100%);
-                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#404040",GradientType=1);
                             form{
+                                width: 100%;
                                 color: $color4;
                                 border-radius: 20px;
-                                backdrop-filter: blur(50px);
-                                
+                            }
+                            .tittle{
+                                color: $color4;
+                                font-size: 25px;
                             }
                         }
                         // #################--- BOARD COMPONENT ---##################
@@ -583,7 +581,7 @@ body {
     $zapatillasShop__height: auto;
     //1.2.1.1.3 GraficoBoardContainer
     $graficoBoard__widht: $componentContainer__width;
-    $graficoBoard__height: 300px;
+    $graficoBoard__height: 350px;
     //1.2.1.1.3.1 GraficoContainer
     $grafico__widht: $graficoBoard__widht;
     $grafico__height: $graficoBoard__height;

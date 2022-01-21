@@ -444,16 +444,17 @@ body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardCon
   width: 100vw;
   height: auto;
   padding: 3vw;
-  background: #404040;
-  background: radial-gradient(circle, #404040 0%, #282828 28%, #404040 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#404040",GradientType=1);
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer form {
+  width: 100%;
   color: #E3E3E3;
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+}
+
+body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer .tittle {
+  color: #E3E3E3;
+  font-size: 25px;
 }
 
 body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
@@ -924,7 +925,7 @@ body .baseLayout .divFlex .navDown .navbtn:hover {
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer {
     width: 68.25vw;
-    height: 300px;
+    height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -935,12 +936,12 @@ body .baseLayout .divFlex .navDown .navbtn:hover {
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .graficoContainer {
     width: 68.25vw;
-    height: 300px;
+    height: 350px;
     overflow-y: scroll;
   }
   body .baseLayout .divFlex .contentContainer .componentContainer .graficoBoardContainer .boardContainer {
     width: 68.25vw;
-    height: 300px;
+    height: 350px;
     overflow-y: scroll;
   }
   body .baseLayout .divFlex .contentContainer .socialComponent {
